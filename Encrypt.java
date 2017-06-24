@@ -19,18 +19,18 @@ public class Encrypt {
     return userPhrase;
   }
 
-  public static String encryptMessage(inputPhrase) {
-    String newMessage = inputPhrase.replaceAll("e", "$");
+  public static String encryptMessage(String inputPhrase) {
+    String newMessage = inputPhrase.replaceAll("e", "&");
     newMessage = newMessage.replaceAll("a", "%");
     newMessage = newMessage.replaceAll("i", "*");
     newMessage = newMessage.replaceAll("o", "@");
-    newMessage = newMessage.replaceAll("u", "!");
+    newMessage = newMessage.replaceAll("u", "?");
     newMessage = newMessage.replaceAll("s", "#");
     newMessage = newMessage.replaceAll("t", "^");
     return newMessage;
   }
 
-  public static void outputMessage(phrase) {
+  public static void outputMessage(String phrase) {
     System.out.println(phrase);
   }
 }
